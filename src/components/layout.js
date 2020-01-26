@@ -3,10 +3,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Header from "./header"
 import "./layout.css"
 import Navbar from "./globals/navbar/Navbar"
-
+import Footer from '../components/Footer'
 const Layout = ({ children }) => {
   
 
@@ -14,7 +13,7 @@ const Layout = ({ children }) => {
     <>
     <Navbar/>
         <main>{children}</main>
-       
+       <Footer/>
     </>
   )
 }
